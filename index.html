@@ -8,28 +8,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 font-sans">
-    <div class="container mx-auto px-4"></div>
+    <body class="bg-gray-50 font-sans">
+        <div class="container mx-auto px-4"></div>
+        
+        <!-- Header Tetap -->
+        <header class="w-full fixed top-0 left-0 z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8">
+            <div class="text-lg font-semibold text-blue-700 flex items-center">
+                <!-- Logo yang hanya terlihat di layar yang lebih besar -->
+                <img src="src/NabBar.png" alt="Logo" class="h-12 mr-2 hidden md:block">
+                <span class="md:hidden flex items-center">
+                    <img src="src/Logomobile.png" alt="Your Image" class="h-8 mr-2">
+                    <span class="text-gray-700">Remind</span><span class="text-blue-700">Me</span>
+                </span>
+            </div>
+            <!-- Ikon Mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburger" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        
+        <!-- Bagian Konten Utama -->
+        <main class="pt-24 px-6 md:px-12 lg:px-24 py-16">
+        </main>
+    </body>
     
-    <!-- Header Tetap -->
-    <header class="w-full fixed top-0 left-0 z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8">
-        <div class="text-lg font-semibold text-blue-700 flex items-center">
-            <img src="src/NabBar.png" alt="Logo" class="h-12 mr-2 hidden md:block">
-            <span class="md:hidden">RemindMe</span>
-        </div>
-        <!-- Ikon Mobile -->
-        <div class="md:hidden">
-            <button id="hamburger" class="focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-    </header>
-    
-    <!-- Bagian Konten Utama -->
-    <main class="pt-24 px-6 md:px-12 lg:px-24 py-16">
-    </main>
-</body>
 
 
 
@@ -129,11 +135,13 @@
         <span class="block">Download an app now and the various</span>
         <span class="block">benefits you will get immediately</span>
     </h2>
-    <div class="flex justify-center gap-4 mt-4">
+    <div class="flex flex-col md:flex-row justify-center gap-4 mt-4">
         <button class="bg-white text-blue-600 font-medium py-2 px-6 rounded-full">Download App</button>
-        <button class="border border-white font-medium py-2 px-6 rounded-full">About App</button>
+        <button class="border border-white md:border-2 font-medium py-2 px-6 rounded-full">About App</button>
     </div>
 </section>
+
+
 
 <!-- Testimonial Section -->
 <section class="bg-white py-16">
